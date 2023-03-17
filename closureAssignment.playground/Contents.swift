@@ -17,7 +17,13 @@ let dataTaskPerfome = { (arrA: [String] , arrB: [Int]) -> [Any] in
     return mergedArray
 }
 
+
+func values(arr:()->()) {
+    let ans = dataTaskPerfome(arr1, arr2)
+    print(ans)
+    arr()
+}
+
 //calling that closure
 
-let ans = dataTaskPerfome(arr1, arr2)
-print(ans)
+values {}
